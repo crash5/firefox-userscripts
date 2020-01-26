@@ -13,12 +13,11 @@
 'use strict';
 
 (function() {
-    const vegetarianIconList = document.querySelectorAll('b');
+    const indicatorsNodeList = document.evaluate("//b[text()='V']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 
-    for (const icon of vegetarianIconList) {
-      if(icon.innerText == 'V') {
-        const foodBox = icon.parentNode.parentNode.parentNode.parentNode;
+    for (var i = 0; i < indicatorsNodeList.snapshotLength; ++i) {
+        const node = indicatorsNodeList.snapshotItem(i);
+        const foodBox = node.parentNode.parentNode.parentNode.parentNode;
         foodBox.style.background = '#76f6bf';
-      }
     }
 })();

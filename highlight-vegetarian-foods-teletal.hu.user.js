@@ -12,10 +12,10 @@
 'use strict';
 
 window.addEventListener('DOMNodeInserted', function() {
-    const vegetarianIconList = document.querySelectorAll('[title="Vegetáriánus"]');
+    const indicatorsNodeList = document.querySelectorAll('[title="Vegetáriánus"]');
 
-    for (const icon of vegetarianIconList) {
-       const foodBox = icon.parentNode.parentNode.parentNode;
+    for (const node of indicatorsNodeList) {
+        const foodBox = node.parentNode.parentNode.parentNode;
         foodBox.style.background = '#76f6bf';
     }
-}, false);    
+}, false);
