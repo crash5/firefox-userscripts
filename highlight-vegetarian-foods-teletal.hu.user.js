@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Green background for vegetarian foods - teletal.hu
+// @name        Highlight vegetarian foods - teletal.hu
 // @description 1/26/2020, 2:23:28 PM
 // @author      Imre NAGY
 // @namespace   dev.veluna.eu
