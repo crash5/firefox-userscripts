@@ -12,7 +12,7 @@
 'use strict';
 
 window.addEventListener('DOMNodeInserted', function() {
-    const indicatorsNodeList = document.querySelectorAll('[title="Vegetáriánus"]');
+    const indicatorsNodeList = document.querySelectorAll('img[title="Vegetáriánus"]');
 
     for (const node of indicatorsNodeList) {
         const foodBox = node.parentNode.parentNode.parentNode;
