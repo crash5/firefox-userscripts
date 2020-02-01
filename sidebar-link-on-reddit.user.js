@@ -4,9 +4,9 @@
 // @description Add link for sidebar to the subreddit top menu and the community details box
 // @author      Imre NAGY
 // @match       https://www.reddit.com/r/*
+// @exclude-match https://www.reddit.com/r/all/
 // @grant       none
 // @version     1.0
-// @downloadURL https://gist.github.com/crash5/be7a0b06d4119a7e78c9e1d781f6d4d7/raw/sidebar-link-on-reddit.user.js
 // ==/UserScript==
 
 'use strict';
